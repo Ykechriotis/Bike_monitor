@@ -26,7 +26,7 @@ OR
 1. Modify the service file bike_monitor.service so that ExecStart points to main.py, and WorkingDirectory points to the directory main.py is in
 2. Place the service file
 
-``` sudo cp bike_monitor.service /etc/system/systemd/ ```
+``` sudo cp bike_monitor.service /etc/systemd/system/ ```
 
 3. Enable the service
 
