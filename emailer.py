@@ -50,7 +50,8 @@ def generate_email_body(results, new_results, brands, num_found, place, time_str
     
     email_body += "\n\n\n---------------------------------------------------\n\n"
 
-    results = sorted(results, key = get_price)
+    if brands[0] == "ALL BRANDS:"
+        results = sorted(results, key = get_price)
     for result in results:
         email_body += f"Title: {result['title']}\nBrand: {result['brand']}\nLink: {result['link']}\n"
         email_body += f"Price: {result['price']}\nLocation: {result['location']}\n"
