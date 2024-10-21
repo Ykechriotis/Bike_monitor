@@ -33,6 +33,8 @@ def main(args=None):
     filtered = config['filtered']
     max_price = config['max_price']
     min_price = config['min_price']
+    print_to_terminal = config['print_to_terminal']
+    email_results = config['email_results']
 
     boot_time = time.time()
     while not check_internet_connection():
@@ -73,7 +75,10 @@ def main(args=None):
     email_body = generate_email_body(all_results, new_results, brands, num_found, place, time_string)
     write_text_file(all_results, place)
 
-    send_email(from_email, to_email, smtp_user,smtp_password, subject, email_body)
+    if print_to_terminal:
+        print(email_body)
+    if email_results:
+        send_email(from_email, to_email, smtp_user,smtp_password, subject, email_body)
 
 
 if __name__ == "__main__":

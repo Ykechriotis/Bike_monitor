@@ -16,7 +16,7 @@ OR
 3. In config.yaml, provide your email and an smtp password. If you have a gmail account, follow this guide to create an app password, and use that as the smtp password (https://support.google.com/accounts/answer/185833?hl=en)
 4. Fill in the other config.yaml parameters, such as location, distance, brand, and price settings
 
-5. Run the code. It should send you an email with the results.
+5. Run the code. It should send you an email with the results, or print to terminal, based on your config parameters.
 
 ``` python3 main.py ```
 

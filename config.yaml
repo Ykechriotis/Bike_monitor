@@ -16,3 +16,5 @@ bikes:
   brands: ["trek",    "specialized",  "cannondale",  "bianchi",  "olmo",    "cervelo",   "colnago",   "peugeot",  "gios",   "bmc", "  pinarello",  "orbea",   "wilier",  "mondia",  "lemond",  "eddie merkx"]
   prices:  ['300',       '300',         '350',        '350',     '300',      '600',       '600',        '250',     '300',    '600',    '600',      '600',      '500',     '450',      '500',     '500']
 
+print_to_terminal: False
+email_results: True
