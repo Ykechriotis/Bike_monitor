@@ -55,13 +55,13 @@ def main(args=None):
 
     if filtered:
         for i in range(len(brands)):
-            search_url = f'https://chicago.craigslist.org/search/{place}/bia?auto_make_model={brands[i]}&{location}&max_price={prices[i]}&search_distance=28#search=1~gallery~0~0'
+            search_url = f'https://chicago.craigslist.org/search/{place}/bia?auto_make_model={brands[i]}&{location}&max_price={prices[i]}&search_distance={distance}#search=1~gallery~0~0'
             results = get_craigslist_results(search_url, brands[i])
             if results:
                 all_results.extend(results)
                 num_found[i] = len(results)
     else:
-        search_url = f'https://chicago.craigslist.org/search/{place}/bia?&{location}&max_price={max_price}&min_price={min_price}&search_distance=28#search=1~gallery~0~0'
+        search_url = f'https://chicago.craigslist.org/search/{place}/bia?&{location}&max_price={max_price}&min_price={min_price}&search_distance={distance}#search=1~gallery~0~0'
         results = get_craigslist_results(search_url, brands[0])
         if results:
             all_results.extend(results)
