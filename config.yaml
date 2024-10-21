@@ -1,0 +1,18 @@
+email:
+  from_email: 'YOUR EMAIL'
+  to_email: 'YOUR EMAIL'
+  smtp_user: 'YOUR EMAIL'
+  smtp_password: 'aaaa bbbb cccc dddd'
+
+place: chicago-il
+location: "lat=41.7686&lon=-87.663"
+distance: 6
+
+filtered: False # True if you want to only search for certain brands, False otherwise
+max_price: 150
+min_price: 20
+
+bikes:
+  brands: ["trek",    "specialized",  "cannondale",  "bianchi",  "olmo",    "cervelo",   "colnago",   "peugeot",  "gios",   "bmc", "  pinarello",  "orbea",   "wilier",  "mondia",  "lemond",  "eddie merkx"]
+  prices:  ['300',       '300',         '350',        '350',     '300',      '600',       '600',        '250',     '300',    '600',    '600',      '600',      '500',     '450',      '500',     '500']
+

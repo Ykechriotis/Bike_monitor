@@ -1,0 +1,13 @@
+[Unit]
+Description=Craigslist Scraper Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/ykechriotis/vintage_bike_scraper/bike_monitor/main.py
+WorkingDirectory=/home/ykechriotis/vintage_bike_scraper/bike_monitor/
+Restart=on-failure
+RestartSec=20
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target
