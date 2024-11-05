@@ -51,3 +51,9 @@ sudo systemctl enable bike_monitor.service
 ```
 sudo systemctl start bike_monitor.service
 ```
+
+5. If you're getting spammed with emails and wanna disable the service, run
+
+```
+sudo systemctl disable bike_monitor.service
+```
